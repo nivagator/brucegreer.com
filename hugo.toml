@@ -6,3 +6,5 @@ theme = 'brooklyn'
 [params]
   description = ''
   storeLink = 'https://store.brucegreer.com'
+  tagLine = 'PIANIST - COMPOSER - SONGWRITER - MUSICAL DIRECTOR'
+  homeBtnTxt = 'I Make Music'

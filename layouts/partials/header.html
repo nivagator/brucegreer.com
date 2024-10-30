@@ -5,7 +5,7 @@
   <div class="header-content-inner">
       <h1 class="hero-title">Bruce <span>Greer</span></h1>
       <hr class="hero-hr">
-      <p class="hero-description">PIANIST - COMPOSER - SONGWRITER - MUSICAL DIRECTOR</p>
-      <a href="#about" class="btn btn-primary btn-xl page-scroll hero-btn">I Make Music</a>
+      <p class="hero-description">{{ or .Site.Params.tagLine `broken` }}</p>
+      <a href="#about" class="btn btn-primary btn-xl page-scroll hero-btn">{{ or .Site.Params.homeBtnTxt  `broken` }}</a>
   </div>
 </div>
