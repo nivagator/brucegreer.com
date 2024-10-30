@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Bruce Greer'
 theme = 'brooklyn'
 
+disableKinds = ["taxonomy", "term"]
+
 [params]
   description = ''
   storeLink = 'https://store.brucegreer.com'
