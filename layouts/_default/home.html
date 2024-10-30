@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ .Content }}
+
+<!-- ABOUT -->
+{{ partial "home-about.html" }}
+<!-- LINKS -->
+{{ partial "home-links.html" }}
+<!-- ALBUMS -->
+{{ partial "home-albums.html" }}
+<!-- STORE LINK -->
+<aside class="bg-dark">
+  <div class="container text-center">
+    <div class="call-to-action">
+      <h2>Visit the Bruce Greer Store</h2>
+      <a href="{{ or .Site.Params.storeLink `broken` }}" class="btn btn-default btn-xl wow tada">Store</a>
+    </div>
+  </div>
+</aside>
+<!-- CONTACT -->
+{{ partial "home-contact.html" }}
+
+{{ end }}

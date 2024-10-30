@@ -1,0 +1,8 @@
+baseURL = 'https://brucegreer.com/'
+languageCode = 'en-us'
+title = 'Bruce Greer'
+theme = 'brooklyn'
+
+[params]
+  description = ''
+  storeLink = 'https://store.brucegreer.com'
