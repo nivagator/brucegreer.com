@@ -1,0 +1,29 @@
+- name: Facebook
+  icon: fa-facebook
+  url: https://www.facebook.com/bruce.greer.5
+  text: Meet Bruce
+  sort: 1
+- name: YouTube
+  icon: fa-youtube
+  url: https://www.youtube.com/user/fgmusicltd
+  text: FG Music LTD
+  sort: 2
+- name: Its A Wonderful Life
+  image: img/iawl.png
+  imgalt: IAWL
+  url: http://iawlmusical.com/
+  text: Official Site
+  sort: 3
+- name: A Christmas Carol
+  image: img/accarole.png
+  imgalt: ACC
+  url: http://www.achristmascarolmusical.com/
+  text: Official Site
+  sort: 4
+- name: Cynthia Clawson
+  image: img/cynthia.png
+  imgalt: cynthia
+  url: http://www.cynthiaclawson.com/
+  text: Official Site
+  sort: 5
+  

@@ -1,5 +1,6 @@
 <!-- LINKS -->
 <section id="services">
+  data generated links
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -8,65 +9,31 @@
       </div>
     </div>
   </div>
-
   <div class="container">
     <div class="row">
+      {{$data := index site.Data.links }}
+      {{ range $key, $value := (sort $data ".sort" "asc") }}
+      {{ if (eq $key 0) }}
       <div class="col-lg-2 col-lg-offset-1 col-md-6 text-center">
-        <div class="service-box">
-          <a href="https://www.facebook.com/bruce.greer.5">
-            <i class="fa fa-6x fa-facebook wow bounceIn text-primary"></i>
-            <h3>Facebook</h3>
-          </a>
-          <p class="text-muted light-text">Meet Bruce</p>
-        </div>
-      </div>
-
+      {{ else }}
       <div class="col-lg-2 col-md-6 text-center">
+      {{ end }}
         <div class="service-box">
-          <a href="https://www.youtube.com/user/fgmusicltd">
-            <i class="fa fa-6x fa-youtube wow bounceIn text-primary" data-wow-delay=".1s"></i>
-            <h3>YouTube</h3>
-          </a>
-          <p class="text-muted light-text">FG Music LTD</p>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-6 text-center">
-        <div class="service-box">
-          <a href="http://iawlmusical.com/">
+          <a href="{{ .url }}">
+            {{ if .icon }}
+            <i class="fa fa-6x {{ .icon }} wow bounceIn text-primary"></i>
+            {{ end }}
+            {{ if .image }}
             <span class="social-icon">
-              <img src="img/iawl.png" alt="IAWL" class="social-img wow bounceIn">
+              <img src="{{ .image }}" alt="{{ or .imgalt `social-icon` }}" class="social-img wow bounceIn">
             </span>
-            <h3>Its A Wonderful Life</h3>
+            {{ end }}
+            <h3>{{ .name }}</h3>
           </a>
-          <p class="text-muted light-text">Official Site</p>
+          <p class="text-muted light-text">{{ .text }}</p>
         </div>
       </div>
-
-      <div class="col-lg-2 col-md-6 text-center">
-        <div class="service-box">
-          <a href="http://www.achristmascarolmusical.com/">
-            <span class="social-icon">
-              <img src="img/accarole.png" alt="ACC" class="social-img wow bounceIn">
-            </span>
-            <h3>A Christmas Carol</h3>
-          </a>
-          <p class="text-muted light-text">Official Site</p>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-6 text-center">
-        <div class="service-box">
-          <a href="http://www.cynthiaclawson.com/">
-            <span class="social-icon">
-              <img src="img/cynthia.png" alt="Cynthia" class="social-img wow bounceIn">
-            </span>
-            <h3>Cynthia Clawson</h3>
-          </a>
-          <p class="text-muted light-text">Official Site</p>
-        </div>
-      </div>
-      
+      {{ end }}
     </div>
   </div>
 </section>
