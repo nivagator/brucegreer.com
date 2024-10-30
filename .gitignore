@@ -28,6 +28,7 @@ static/img/*
 
 zProjectInfo/
 zignored/
+zOriginal/
 
 build.md
 todo.md
