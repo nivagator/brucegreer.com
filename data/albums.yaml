@@ -1,0 +1,30 @@
+- name: Celtic Carols
+  url: https://store.brucegreer.com/celtic-carols
+  image: img/portfolio/celtic-carols-500.jpg
+  category: Solo Piano
+  sort: 1
+- name: His Greatness We Applaud
+  url: https://store.brucegreer.com/his-greatness-we-applaud/
+  image: img/portfolio/his-greatness-we-applaud-500.jpg
+  category: Solo Piano & Orchestra
+  sort: 2
+- name: I Surrender All
+  url: https://store.brucegreer.com/i-surrender-all
+  image: img/portfolio/i-surrender-all-500.jpg
+  category: Solo Piano & Orchestra
+  sort: 3
+- name: Majesty
+  url: https://store.brucegreer.com/majesty
+  image: img/portfolio/majesty-500.jpg
+  category: Solo Piano & Orchestra
+  sort: 4
+- name: Solace
+  url: https://store.brucegreer.com/solace
+  image: img/portfolio/solace-500.jpg
+  category: Solo Piano
+  sort: 5
+- name: Tapestry on Ivory
+  url: https://store.brucegreer.com/tapestry-on-ivory
+  image: img/portfolio/tapestry-on-ivory-500.jpg
+  category: Solo Piano
+  sort: 6
