@@ -5,31 +5,25 @@
       <div class="col-lg-8 col-lg-offset-2 text-center">
         <h2 class="section-heading">Contact Bruce</h2>
         <hr class="primary">
-        <!-- <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p> -->
       </div>
-
-      <div class="col-lg-4 col-lg-offset-2 text-center">
-        <a href="mailto:bruce@brucegreer.com">
-          <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-          <p>bruce@brucegreer.com</p>
-        </a>
-      </div>
-
-      <div class="col-lg-4 text-center">
-        <ul class="contact-address">
-          <li class="contact-title">
-            <h3>F&G Music Ltd.</h3>
-          </li>
-          <!-- <li class="contact">
-          2022 Street Drive
-          <br>
-          Town, Texas 75000
-        </li> -->
-          <!-- <li>(999) 867-5309</li> -->
-          <li><a href="mailto:keithcfergus@yahoo.com">keithcfergus@yahoo.com</a></li>
-        </ul>
-      </div>
-
+        {{$data := index site.Data.contact }}
+        {{ range $key, $value := (sort $data ".sort" "asc") }}
+        {{ if (eq $key 0) }}
+        <div class="col-lg-4 col-lg-offset-2 text-center">
+        {{ else }}
+        <div class="col-lg-4 text-center">
+        {{ end }}
+          <a href="mailto:{{ .email }}">
+        {{ if .icon }}
+            <i class="fa {{ .icon }} fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+        {{ end }}
+        {{ if .title }}
+            <h3 class="contact-title" style="color: var(--fbc-primary-text);">{{ .title }}</h3>
+        {{ end }}
+            <p>{{ .email }}</p>
+          </a>
+        </div>
+      {{ end }}
     </div>
   </div>
-</section>
+</section> 
