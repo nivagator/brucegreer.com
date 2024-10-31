@@ -1,7 +1,7 @@
 <!-- ALBUMS -->
 <section class="no-padding" id="portfolio">
-  <div class="container-fluid">
-    <div class="row no-gutter">
+  <div class="container-fluid" style="background-color: #242424;">
+    <div class="row no-gutter" style="max-width: 1500px;margin: 0 auto;">
     {{$data := index site.Data.albums }}
     {{ range $key, $value := (sort $data ".sort" "asc") }}
       <div class="col-lg-4 col-sm-6">
